@@ -39,3 +39,19 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ 'Clean'     :'✔︎',
                 \ 'Unknown'   :'?',
                 \ }
+
+let g:coc_global_extensions = [
+    \  'coc-snippets',
+    \  'coc-emmet',
+    \  'coc-html',
+    \  'coc-css',
+    \  'coc-json', 
+    \  'coc-phpls',
+    \  'coc-yaml',
+    \  'coc-prettier',
+    \  'coc-eslint',
+    \  'coc-jedi',
+    \  'coc-python',
+    \   ]
+
+
