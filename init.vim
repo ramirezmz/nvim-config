@@ -1,4 +1,5 @@
 set encoding=UTF-8
+set number
 set mouse=a
 set numberwidth=1
 set clipboard=unnamed
@@ -14,7 +15,6 @@ set laststatus=2
 set noshowmode
 so ~/.config/nvim/plugins.vim
 so ~/.config/nvim/maps.vim
-
 
 "Seção de configuração
 colorscheme gruvbox
@@ -53,5 +53,17 @@ let g:coc_global_extensions = [
     \  'coc-jedi',
     \  'coc-python',
     \   ]
+
+"  nerdtree
+let NERDTreeShowHidden=1
+let NERDTreeQuitOnOpen=1
+let NERDTreeAutoDeleteBuffer=1
+let NERDTreeMinimalUI=1
+let NERDTreeDirArrows=1
+let NERDTreeShowLineNumbers=1
+let NERDTreeMapOpenInTab='\t'
+
+" tmux navigator
+let g:tmux_navigator_no_mappings = 1
 
 

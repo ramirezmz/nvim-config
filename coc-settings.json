@@ -7,7 +7,11 @@
     "typescriptreact",
     "css",
     "json",
-    "yaml"
+    "yaml",
+    "markdown",
+    "javascript",
+    "python",
+    "html"
   ],
   "diagnostic.displayByAle": true,
   "coc.preferences.colorSupport": true,

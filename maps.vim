@@ -1,4 +1,36 @@
 set splitright
+
+" split resize
+nnoremap <Leader>> 10<C-w>>
+nnoremap <Leader>< 10<C-w><
+
+" Save and Exit
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>q :q<CR>
+nnoremap <Leader>Q :q!<CR>
+
+" shorter commands
+cnoreabbrev tree NERDTreeToggle
+cnoreabbrev blame Gblame
+cnoreabbrev find NERDTreeFind
+cnoreabbrev diff Gdiff
+
+" plugs
+map <C-b> :NERDTreeToggle<CR>
+map <Leader>p :Files<CR>
+map <Leader>ag :Ag<CR>
+
+" tmux navigator
+"nnoremap <silent> <Leader><C-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <S><C-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <S><C-j> :TmuxNavigateDown<cr>
+nnoremap <silent> <S><C-k> :TmuxNavigateUp<cr>
+nnoremap <silent> <S><C-l> :TmuxNavigateRight<cr>
+
+" run current file
+nnoremap <Leader>x :!node %<cr>
+
+
 function! OpenTerminal()
   " move to right most buffer
   execute "normal \<C-l>"
@@ -178,3 +210,5 @@ inoremap <silent><expr> <c-space> coc#refresh()
 
 " Coc only does snippet and additional edit on confirm.
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
+" NERDTree
